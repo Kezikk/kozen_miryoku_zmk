@@ -34,7 +34,7 @@ MIRYOKU_X(GAME,   "Game")
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+U_NP,              U_NP,              U_LT(U_NUM, ESC),  &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 
 #define MIRYOKU_LAYOUTMAPPING_CORNE( \
@@ -43,10 +43,10 @@ U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp 
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp TAB          K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &kp BSPC \
-&u_mt LCTRL ESC  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  &kp SQT \
-&kp LSHFT        K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &u_tog_U_GAME \
-                           K32  K33  K34       K35  K36  K37
+&kp ESC    K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &kp BSPC \
+&kp LCTRL  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  &kp SEMI \
+&kp LSHFT  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &u_tog_U_GAME \
+                     K32  K33  K34       K35  K36  K37
 
 #define MIRYOKU_KLUDGE_TOPROWCOMBOS_LEFTPINKIE 2 3
 #define MIRYOKU_KLUDGE_TOPROWCOMBOS_LEFTINNERINDEX 3 4
