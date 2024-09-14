@@ -13,7 +13,8 @@ MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(GAME,   "Game")
+MIRYOKU_X(GAME,   "Game") \
+MIRYOKU_X(GNUM,   "Game #") \
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -26,6 +27,7 @@ MIRYOKU_X(GAME,   "Game")
 #define U_SYM    8
 #define U_FUN    9
 #define U_GAME   10
+#define U_GNUM   11
 
 #define XXX &none
 
@@ -34,8 +36,14 @@ MIRYOKU_X(GAME,   "Game")
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              U_LT(U_NUM, ESC),  &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+U_NP,              U_NP,              U_LT(U_GNUM, ESC), &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
+#define MIRYOKU_LAYERMAPPING_GNUM MIRYOKU_MAPPING
+#define MIRYOKU_LAYER_GNUM \
+&kp N0,            &kp W,             &kp N1,            &kp N2,            &kp RBKT,          U_NA,              U_NA,      U_NA,     U_NA,    U_NA,          \
+&kp A,             &kp S,             &kp D,             &kp N3,            &kp EQUAL,         U_NA,              U_NA,      U_NA,     U_NA,    U_NA,          \
+&kp N7,            &kp N6,            &kp N5,            &kp N4,            &kp BSLH,          U_NA,              U_NA,      U_NA,     U_NA,    U_NA,          \
+U_NP,              U_NP,              U_NA,              &kp SPACE,         &kp TAB,           &kp RET,           U_NA,      U_NA,     U_NP,    U_NP
 
 #define MIRYOKU_LAYOUTMAPPING_CORNE( \
      K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
