@@ -42,7 +42,7 @@ U_NP,              U_NP,              U_LT(U_GNUM, ESC), &kp SPACE,         &kp 
 #define MIRYOKU_LAYER_GNUM \
 &kp N0,            &kp W,             &kp N1,            &kp N2,            &kp RBKT,          U_NA,              U_NA,      U_NA,     U_NA,    U_NA,          \
 &kp A,             &kp S,             &kp D,             &kp N3,            &kp EQUAL,         U_NA,              U_NA,      U_NA,     U_NA,    U_NA,          \
-&kp N7,            &kp N6,            &kp N5,            &kp N4,            &kp BSLH,          U_NA,              U_NA,      U_NA,     U_NA,    U_NA,          \
+&kp N7,            &kp N6,            &kp N5,            &kp N4,            &kp FSLH,          U_NA,              U_NA,      U_NA,     U_NA,    U_NA,          \
 U_NP,              U_NP,              U_NA,              &kp SPACE,         &kp TAB,           &kp RET,           U_NA,      U_NA,     U_NP,    U_NP
 
 #define MIRYOKU_LAYOUTMAPPING_CORNE( \
